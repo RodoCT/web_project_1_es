@@ -5,12 +5,8 @@
 
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -21,8 +17,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  border: 1px solid red;
-  /* parameters for the header section */
 }
 
 .logo {
@@ -35,7 +29,6 @@
 .logo_place_header {
   top: 30px;
   left: 64px;
-  border: 1px solid red;
 }
 
 .header__title {
@@ -44,7 +37,6 @@
   margin-left: 64px;
   font-size: 102px;
   font-weight: bold;
-  border: 1px solid red;
 }
 
 .header__subtitle {
@@ -56,7 +48,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 .header__link {
@@ -71,7 +62,6 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  border: 1px solid red;
 }
 
 .header__square {
@@ -82,14 +72,12 @@
   width: 568px;
   height: 568px;
   background: #2F80ED;
-  border: 1px solid red;
 }
 
 .description {
   display: flex;
   justify-content: space-between;
   padding: 100px 0;
-  border: 1px solid red;
 }
 
 .two-columns {
@@ -97,7 +85,6 @@
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  border: 1px solid red;
 }
 
 .two-columns__brief {
@@ -107,7 +94,6 @@
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
-  border: 1px solid red;
 }
 
 .two-columns__main-text {
@@ -119,7 +105,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 .span-acent {
@@ -130,7 +115,6 @@
 
 .digits {
   padding: 0 0 100px;
-  border: 1px solid red;
 }
 
 .section-title {
@@ -141,7 +125,6 @@
   font-weight: bold;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid red;
 }
 
 .section-subtitle {
@@ -151,8 +134,9 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
   text-align: center;
-  border: 1px solid red;
 }
 
 .table {
@@ -162,28 +146,26 @@
   flex-wrap: wrap;
   width: 1100px;
   margin: auto;
-  border: 1px solid red;
+  gap: 20px;
 }
 
 .table__cell {
   display: flex;
   flex-direction: column;
   width: 250px;
-  border: 1px solid red;
+  gap: 20px;
 }
 
 .table__heading {
   line-height: 1.5;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid red;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 .feynman {
@@ -192,7 +174,6 @@
   position: relative;
   background: #F2F2F2;
   height: 790px;
-  border: 1px solid red;
 }
 
 .feynman__title {
@@ -232,13 +213,11 @@
   left: 0;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
 
-/* including elements with key-value modifiers */
 .kaufman {
   position: relative;
   background-color: #1F1F1F;
@@ -290,4 +269,74 @@
   position: absolute;
   right: -124px;
   top: 0;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 60px 0 40px;
+}
+
+.footer__columns {
+  min-height: 350px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  position: relative;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer_author {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.footer_column-heading {
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
