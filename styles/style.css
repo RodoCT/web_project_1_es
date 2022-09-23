@@ -17,6 +17,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #F2F2F2;
 }
 
 .logo {
@@ -226,6 +227,7 @@
 }
 
 .title__theme_dark {
+  position: relative;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -272,7 +274,7 @@
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #1F1F1F;
   padding: 60px 0 40px;
 }
 
